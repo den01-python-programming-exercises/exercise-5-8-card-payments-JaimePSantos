@@ -1,11 +1,11 @@
 import pytest
 import os
-
+from src.payment_card import PaymentCard
+from src.payment_terminal import PaymentTerminal
 def test_exercise():
     os.chdir('src')
 
-    from payment_card import PaymentCard
-    from payment_terminal import PaymentTerminal
+
     card = PaymentCard(10)
 
     assert card.balance == 10
